@@ -1,0 +1,112 @@
+.body{
+    margin: 0;
+    background: grey;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header__button{
+    background: none;
+    border-style: none;
+    cursor: pointer;
+}
+
+.header__button:focus + .nav{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    padding: 8px 16px 24px;
+    width: 384px;
+}
+
+.nav{
+    display: none;
+    position: fixed;
+    
+}
+
+.nav__login{
+    text-decoration: none;
+    background: black;
+    color: white;
+}
+
+.nav__list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav__item{
+
+}
+
+.nav__link{
+    display: block;
+    width: 8em;
+    text-decoration: none;
+    border: 1px solid #BE353D;
+    padding: .3em 0;
+    text-align: center;
+    color: #FA453B;
+    background: #EF8E76;
+    transition: 1s all;
+}
+
+.nav__link:hover{
+    
+}
+
+.nav__list list--second{
+
+}
+
+.nav__item nav__item--second{
+
+}
+
+.nav__link nav__link--second{
+
+}
+
+.nav__list list--third{
+
+}
+
+.nav__item nav__item--third{
+
+}
+
+.nav__link nav__link--third{
+
+}
+
+.header__img{
+
+}
+
+.header__link{
+
+}
+
+@media screen and (min-width: 850px) {
+    .header__button {
+        display: none;
+    }
+
+	.nav {
+        
+    }
+
+	.nav__list {
+        
+    }
+}

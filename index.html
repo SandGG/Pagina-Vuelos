@@ -7,16 +7,16 @@
     <link href="estilo.css" rel="stylesheet" type="text/css" >
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
-<body>
+<body class="body">
     <header class="header">
-        <button class="header__button" name="button"> <i class="fas fa-list"></i> </button>
+        <button class="header__button" name="button"> <i class="fas fa-list fa-2x"></i> </button>
         <nav class="nav">
-            <a class="nav__link" href="">Iniciar sesión</a>
             <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="">Publicar</a>
-                    <ul class="nav__list">
-                        <li class="nav__item"><a class="nav__link" href="">Escribir una opinión</a></li>
-                        <li class="nav__item"><a class="nav__link" href="">Publicas fotos</a></li>
+                <a class="nav__login" href="">Iniciar sesión</a>
+                <li class="nav__item"><p class="nav__text">Publicar</p>
+                    <ul class="nav__list list--second">
+                        <li class="nav__list list--second"><a class="nav__link nav__link--second" href="jajaj">Escribir una opinión</a></li>
+                        <li class="nav__list list--second"><a class="nav__link nav__link--second" href="#">Publicas fotos</a></li>
                     </ul>
                 </li>
                 <li class="nav__item"><a class="nav__link" href="">Alertas</a></li>
@@ -31,12 +31,12 @@
                 <li class="nav__item"><a class="nav__link" href="">Paquetes de Vacaciones</a></li>
                 <li class="nav__item"><a class="nav__link" href="">Cruceros</a></li>
                 <li class="nav__item"><a class="nav__link" href="">Alquiler de autos</a></li>
-                <li class="nav__item"><a class="nav__link" href="">Más</a>
-                    <ul class="nav__list list--second">
-                        <li class="nav__item nav__item--second"><a class="nav__link nav__link--second" href="">Foro de viajes</a></li>
-                        <li class="nav__item nav__item--second"><a class="nav__link nav__link--second" href="">Aerolineas</a></li>
-                        <li class="nav__item nav__item--second"><a class="nav__link nav__link--second" href="">Lo mejor del 2020</a></li>
-                        <li class="nav__item nav__item--second"><a class="nav__link nav__link--second" href="">Centro de ayuda</a></li>
+                <li class="nav__item"><p class="nav__text">Más</p>
+                    <ul class="nav__list list--third">
+                        <li class="nav__list list--third"><a class="nav__link nav__link--third" href="">Foro de viajes</a></li>
+                        <li class="nav__item nav__item--third"><a class="nav__link nav__link--third" href="">Aerolineas</a></li>
+                        <li class="nav__item nav__item--third"><a class="nav__link nav__link--third" href="">Lo mejor del 2020</a></li>
+                        <li class="nav__item nav__item--third"><a class="nav__link nav__link--third" href="">Centro de ayuda</a></li>
                     </ul>
                 </li>
             </ul>
@@ -71,7 +71,7 @@
             <p class="article__text">Descubre lo bueno que hay en el mundo.</p>
             <div class="article__container">
                 <form class="article__form">
-                    <input placeholder="¿A dónde?" name="bus" type="search">
+                    <submit placeholder="¿A dónde?" name="bus" type="search">
                 </form>
                 <div class="article__icono">  
                     <i class="fas fa-search"></i>
@@ -79,10 +79,10 @@
             </div>
             <div>--(imagen de los sujetos)--</div>
         </article>
-        <div class="">
+        <article class="article">
             <p>Apoya lo bueno que hay en el mundo</p>
-            <div class="galeria">
-                <div class="galeria__item">
+            <section class="galeria">
+                <article class="galeria__item">
                     <a class="galeria__link" href="#">
                         <img src="img/mundo__item1.png">
                         <div class="galeria__descrip">
@@ -90,8 +90,8 @@
                             <p>Escribir una opinión</p>
                         </div>
                     </a>
-                </div>
-                <div class="galeria__item">
+                </article>
+                <article class="galeria__item">
                     <a class="galeria__link" href="#">
                         <img src="img/mundo__item2.png">
                         <div class="galeria__descrip">
@@ -99,8 +99,8 @@
                             <p>Comprar una tarjeta de regalo</p>
                         </div>
                     </a>
-                </div>
-                <div class="galeria__item">
+                </article>
+                <article class="galeria__item">
                     <a class="galeria__link" href="#">
                         <img src="img/mundo__item3.png">
                         <div class="galeria__descrip">
@@ -108,11 +108,11 @@
                             <p>Reserva una experiencia virtual</p>
                         </div>
                     </a>
-                </div>
-            </div> 
+                </article>
+            </section> 
             <p>Sueña con tu próximo viaje</p>
-            <div class="galeria">
-                <div class="galeria__item">
+            <section class="galeria">
+                <article class="galeria__item">
                     <a class="galeria__link" href="#">
                         <div class="galeria__save">
                             <i class="far fa-heart"></i>
@@ -122,8 +122,8 @@
                             <p> Nueva York, Estado de Nueva York </p>
                         </div>
                     </a>
-                </div>
-                <div class="galeria__item">
+                </article>
+                <article class="galeria__item">
                     <a class="galeria__link" href="#">
                         <div class="galeria__save">
                             <i class="far fa-heart"></i>
@@ -133,8 +133,8 @@
                             <p> Singapur, Singapur </p>
                         </div>
                     </a>
-                </div>
-                <div class="galeria__item">
+                </article>
+                <article class="galeria__item">
                     <a class="galeria__link" href="#">
                         <div class="galeria__save">
                             <i class="far fa-heart"></i>
@@ -144,8 +144,8 @@
                             <p> Roma, Italia </p>
                         </div>
                     </a>
-                </div>
-                <div class="galeria__item">
+                </article>
+                <article class="galeria__item">
                     <a class="galeria__link" href="#">
                         <div class="galeria__save">
                             <i class="far fa-heart"></i>
@@ -155,8 +155,8 @@
                             <p> Paris, Francia </p>
                         </div>
                     </a>
-                </div>
-                <div class="galeria__item">
+                </article>
+                <article class="galeria__item">
                     <a class="galeria__link" href="#">
                         <div class="galeria__save">
                             <i class="far fa-heart"></i>
@@ -166,8 +166,8 @@
                             <p> Barcelona, España </p>
                         </div>
                     </a>
-                </div>
-                <div class="galeria__item">
+                </article>
+                <article class="galeria__item">
                     <a class="galeria__link" href="#">
                         <div class="galeria__save">
                             <i class="far fa-heart"></i>
@@ -177,8 +177,8 @@
                             <p> Tokyo, Japón </p>
                         </div>
                     </a>
-                </div>
-                <div class="galeria__item">
+                </article>
+                <article class="galeria__item">
                     <a class="galeria__link" href="#">
                         <div class="galeria__save">
                             <i class="far fa-heart"></i>
@@ -188,8 +188,8 @@
                             <p> Londres, UK </p>
                         </div>
                     </a>
-                </div>
-            </div>
+                </article>
+            </section>
             <article class="article">
                 <div>--imagen de fondo--
                     <img src="img/logo__premios.png">
@@ -197,7 +197,7 @@
                     <a href="">Ver los ganadores</a>
                 </div>
             </article>
-        </div>
+        </article>
     </main>
     <footer class="footer">
         <div class="footer__container">
