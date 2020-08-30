@@ -1,14 +1,60 @@
+.drop-button{
+    background-color:  #8DEBF7;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .drop-button:hover{
+    background-color: #2EABAB;
+  }
+
+  .dropdown-content{
+    position: absolute;
+    left: -100px;
+    min-width: 100px;
+    transition: 1s;
+    } 
+  
+  .drop-button:focus + .dropdown-content{
+    position: relative;
+    left: 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .body{
     margin: 0;
-    background: grey;
 }
 
 .header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: relative;
     max-width: 1100px;
     margin: 0 auto;
+    padding: 0 24px;
 }
 
 .header__button{
@@ -18,25 +64,35 @@
 }
 
 .header__button:focus + .nav{
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: white;
-    padding: 8px 16px 24px;
-    width: 384px;
+    left: 0;   
 }
 
 .nav{
-    display: none;
+    top: 0;
     position: fixed;
-    
+    width: 367px;
+    left: -100%;
+    transition: .4s;
+    background: white;
+    padding: 8px 16px 24px;
+    overflow-y: scroll;
+    height: 100%;
 }
 
 .nav__login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     background: black;
     color: white;
+    border-radius: 10px; 
+    width: auto;
+    padding: 10px 16px;
+    margin: 48px 24px 24px 24px;
+    font-size: 15px;
+    font-family: Arial;
+    font-weight: 700;
 }
 
 .nav__list{
@@ -45,20 +101,14 @@
     list-style: none;
 }
 
-.nav__item{
-
+.nav__item:hover{
+    background: rgb(245, 239, 241);
 }
 
 .nav__link{
-    display: block;
-    width: 8em;
     text-decoration: none;
-    border: 1px solid #BE353D;
-    padding: .3em 0;
-    text-align: center;
-    color: #FA453B;
-    background: #EF8E76;
-    transition: 1s all;
+    text-align: left;
+    color: black;
 }
 
 .nav__link:hover{
