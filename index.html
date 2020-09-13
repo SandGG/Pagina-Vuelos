@@ -1,286 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina 2</title>
-    <link href="estilo.css" rel="stylesheet" type="text/css" >
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-</head>
-<body class="body">
-    <header class="header">
-        <button class="header__button" name="button"> <i class="fas fa-list fa-2x"></i> </button>
-        <nav class="nav">
-            <a class="nav__login" href="#">Iniciar sesión</a>
-            <div>
-                <button class="nav__button" name="button">Publicar</button>
-                <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="#a">Escribir una opinión</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#b">Publicas fotos</a></li>
-                </ul>
-                <a class="nav__text" href="#">Alertas</a>
-                <a class="nav__text" href="#">Viajes</a>
-                <a class="nav__text" href="#">Reservaciones</a>  
-            </div>
-            <div>
-                <a class="nav__link" href="#">Hoteles</a>
-                <a class="nav__link" href="#">Qué hacer</a>
-                <a class="nav__link" href="#">Restaurantes</a>
-                <a class="nav__link" href="#">Vuelos</a>
-                <a class="nav__link" href="#">Rentas de vacaciones</a>
-                <a class="nav__link" href="#">Compras</a>
-                <a class="nav__link" href="#">Paquetes de Vacaciones</a>
-                <a class="nav__link" href="#">Cruceros</a>
-                <a class="nav__link" href="#">Alquiler de autos</a>
-                <button class="nav__button" name="button">Más</button>
-                <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="#">Foro de viajes</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Aerolineas</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Lo mejor del 2020</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Centro de ayuda</a></li>
-                </ul>
-            </div>
-        </nav>    
-        <img class="header__img" src="img/logo.png">
-        <a class="header__link" href="#"> <i class="fas fa-search fa-2x"></i> </a>  
-    </header>
-    <main class="main">
-        <nav class="navegacion">
-            <ul class="navegacion__list">
-                <li class="navegacion__item"><a class="navegacion__link" href="#">Hoteles</a></li>
-                <li class="navegacion__item"><a class="navegacion__link" href="#">Alquileres de vacaciones</a></li>
-                <li class="navegacion__item"><a class="navegacion__link" href="#">Cosas que hacer</a></li>
-                <li class="navegacion__item"><a class="navegacion__link" href="#">Restaurantes</a></li>
-                <li class="navegacion__item"><a class="navegacion__link" href="#">Escribir una opinión</a></li>
-                <li class="navegacion__item"><a class="navegacion__link" href="#">Foros de viajes</a></li>
-                <li class="navegacion__item"><a class="navegacion__link" href="#">Más</a>
-                    <ul class="navegacion__list list--second">
-                        <li class="navegacion__item navegacion__item--second"><a class="navegacion__link navegacion__link--second" href="#">Aerolíneas</a></li>
-                        <li class="navegacion__item navegacion__item--second"><a class="navegacion__link navegacion__link--second" href="#">Agregar un lugar</a></li>  
-                        <li class="navegacion__item navegacion__item--second"><a class="navegacion__link navegacion__link--second" href="#">Alquiler de autos</a></li>  
-                        <li class="navegacion__item navegacion__item--second"><a class="navegacion__link navegacion__link--second" href="#">Centro de ayuda</a></li>  
-                        <li class="navegacion__item navegacion__item--second"><a class="navegacion__link navegacion__link--second" href="#">Cruceros</a></li>  
-                        <li class="navegacion__item navegacion__item--second"><a class="navegacion__link navegacion__link--second" href="#">Paquetes de Vacaciones</a></li>  
-                        <li class="navegacion__item navegacion__item--second"><a class="navegacion__link navegacion__link--second" href="#">Travellers' Choice</a></li>  
-                        <li class="navegacion__item navegacion__item--second"><a class="navegacion__link navegacion__link--second" href="#">Vuelos </a></li>            
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pagina 2</title>
+        <link href="estilo.css" rel="stylesheet" type="text/css" >
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head> 
+    <body class="body">
+        <header class="header">
+            <div class="header__container">
+                <button class="header__button" name="button"> <i class="fas fa-list fa-2x"></i> </button>
+                <nav class="nav">
+                    <a class="nav__login" href="#">Iniciar sesión</a>
+                    <p class="nav__text">Publicar</p>
+                    <ul class="nav__list">
+                        <li class="nav__item nav__item--second"><a class="nav__link" href="#">Escribir una opinión</a></li>
+                        <li class="nav__item nav__item--second"><a class="nav__link" href="#">Publicas fotos</a></li>
                     </ul>
-                </li>    
-            </ul>
-        </nav>
-        <article class="article">
-            <p class="article__text">Descubre lo bueno que hay en el mundo.</p>
-            <div class="article__container">
-                <form class="article__form">
-                    <submit placeholder="¿A dónde?" name="bus" type="search">
-                </form>
-                <div class="article__icono">  
-                    <i class="fas fa-search"></i>
-                </div>
+                    <a class="nav__text nav__link--element" href="#">Alertas</a>
+                    <a class="nav__text nav__link--element" href="#">Viajes</a>
+                    <a class="nav__text nav__link--element" href="#">Reservaciones</a>
+                    <hr class="nav__line">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="#">Hoteles</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Qué hacer</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Restaurantes</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Vuelos</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Rentas de vacaciones</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Compras</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Paquetes de Vacaciones</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Cruceros</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Alquiler de autos</a></li>
+                        <li><p class="nav__text">Más</p>
+                            <ul class="nav__list">
+                                <li class="nav__item nav__item--second"><a class="nav__link" href="#">Foro de viajes</a></li>
+                                <li class="nav__item nav__item--second"><a class="nav__link" href="#">Aerolineas</a></li>
+                                <li class="nav__item nav__item--second"><a class="nav__link" href="#">Lo mejor del 2020</a></li>
+                                <li class="nav__item nav__item--second"><a class="nav__link" href="#">Centro de ayuda</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>    
+                <img class="header__img" src="img/logo.png">
+                <a href="#"> <i class="fas fa-search fa-2x"></i> </a>  
             </div>
-            <div>--(imagen de los sujetos)--</div>
-        </article>
-        <article class="article">
-            <p>Apoya lo bueno que hay en el mundo</p>
-            <section class="galeria">
-                <article class="galeria__item">
-                    <a class="galeria__link" href="#">
-                        <img src="img/mundo__item1.png">
-                        <div class="galeria__descrip">
-                            <p> Revive tus experiecnias de viaje </p>
-                            <p>Escribir una opinión</p>
-                        </div>
-                    </a>
-                </article>
-                <article class="galeria__item">
-                    <a class="galeria__link" href="#">
-                        <img src="img/mundo__item2.png">
-                        <div class="galeria__descrip">
-                            <p> Ayuda a los restaurantes que deseas visitar </p>
-                            <p>Comprar una tarjeta de regalo</p>
-                        </div>
-                    </a>
-                </article>
-                <article class="galeria__item">
-                    <a class="galeria__link" href="#">
-                        <img src="img/mundo__item3.png">
-                        <div class="galeria__descrip">
-                            <p> Explora el mundo desde tu hogar </p>
-                            <p>Reserva una experiencia virtual</p>
-                        </div>
-                    </a>
-                </article>
-            </section> 
-            <p>Sueña con tu próximo viaje</p>
-            <section class="galeria">
-                <article class="galeria__item">
-                    <a class="galeria__link" href="#">
-                        <div class="galeria__save">
-                            <i class="far fa-heart"></i>
-                        </div>
-                        <div>--(imagen)--</div>
-                        <div class="galeria__descrip">
-                            <p> Nueva York, Estado de Nueva York </p>
-                        </div>
-                    </a>
-                </article>
-                <article class="galeria__item">
-                    <a class="galeria__link" href="#">
-                        <div class="galeria__save">
-                            <i class="far fa-heart"></i>
-                        </div>
-                        <div>--(imagen)--</div>
-                        <div class="galeria__descrip">
-                            <p> Singapur, Singapur </p>
-                        </div>
-                    </a>
-                </article>
-                <article class="galeria__item">
-                    <a class="galeria__link" href="#">
-                        <div class="galeria__save">
-                            <i class="far fa-heart"></i>
-                        </div>
-                        <div>--(imagen)--</div>
-                        <div class="galeria__descrip">
-                            <p> Roma, Italia </p>
-                        </div>
-                    </a>
-                </article>
-                <article class="galeria__item">
-                    <a class="galeria__link" href="#">
-                        <div class="galeria__save">
-                            <i class="far fa-heart"></i>
-                        </div>
-                        <div>--(imagen)--</div>
-                        <div class="galeria__descrip">
-                            <p> Paris, Francia </p>
-                        </div>
-                    </a>
-                </article>
-                <article class="galeria__item">
-                    <a class="galeria__link" href="#">
-                        <div class="galeria__save">
-                            <i class="far fa-heart"></i>
-                        </div>
-                        <div>--(imagen)--</div>
-                        <div class="galeria__descrip">
-                            <p> Barcelona, España </p>
-                        </div>
-                    </a>
-                </article>
-                <article class="galeria__item">
-                    <a class="galeria__link" href="#">
-                        <div class="galeria__save">
-                            <i class="far fa-heart"></i>
-                        </div>
-                        <div>--(imagen)--</div>
-                        <div class="galeria__descrip">
-                            <p> Tokyo, Japón </p>
-                        </div>
-                    </a>
-                </article>
-                <article class="galeria__item">
-                    <a class="galeria__link" href="#">
-                        <div class="galeria__save">
-                            <i class="far fa-heart"></i>
-                        </div>
-                        <div>--(imagen)--</div>
-                        <div class="galeria__descrip">
-                            <p> Londres, UK </p>
-                        </div>
-                    </a>
-                </article>
-            </section>
-            <article class="article">
-                <div>--imagen de fondo--
-                    <img src="img/logo__premios.png">
-                    <p>Premios Travellers' Choice 2020</p>
-                    <a href="">Ver los ganadores</a>
+        </header>
+        <main>
+            <nav>
+                <ul class="navig__list">
+                    <li class="navig__item"><a class="navig__link" href="#">Hoteles</a><i class="fas fa-bed icono"></i></li>
+                    <li class="navig__item"><a class="navig__link" href="#">Alquileres&nbsp;de&nbsp;vacaciones</a><i class="fas fa-key icono"></i></li>
+                    <li class="navig__item"><a class="navig__link" href="#">Cosas&nbsp;que&nbsp;hacer</a><i class="fas fa-map icono"></i></li>
+                    <li class="navig__item"><a class="navig__link" href="#">Restaurantes</a><i class="fas fa-utensils icono"></i></li>
+                    <li class="navig__item"><a class="navig__link" href="#">Escribir&nbsp;una&nbsp;opinión</a><i class="far fa-edit icono"></i></li>
+                    <li class="navig__item"><a class="navig__link" href="#">Foros&nbsp;de&nbsp;viajes</a><i class="fas fa-plane-departure icono"></i></li>
+                        <button class="navig__button" name="button"><a class="navig__link" href="#">Más</a><i class="fas fa-ellipsis-h icono"></i></button>
+                        <div class="navig--second">
+                            <p class="navig__text">Explora en Tripadvisor</p>
+                            <ul class="nav__list nav__list--button">    
+                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#a">Aerolíneas</a></li>
+                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#b">Agregar un lugar</a></li>  
+                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#c">Alquiler de autos</a></li> 
+                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#">Alquiler de vacaciones</a></li> 
+                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#">Centro de ayuda</a></li>  
+                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#">Cosas que hacer</a></li> 
+                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#">Cruceros</a></li>  
+                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#">Escribir una opinión</a></li>  
+                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#">Foro de viajes</a></li>  
+                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#">Hoteles </a></li>            
+                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#">Paquetes de Vacaciones</a></li>  
+                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#">Restaurantes</a></li> 
+                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#">Travellers' Choice</a></li>  
+                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#">Vuelos </a></li>               
+                            </ul>
+                        </div> 
+                    </li>    
+                </ul>
+            </nav>
+            <article class="article__search">
+                <div class="article__search--container">
+                    <p class="article__text">Descubre lo bueno que hay en el mundo.</p>
+                    <div class="article__item"> 
+                        <form>
+                            <input class="article__input" placeholder="¿A dónde?" name="bus" type="search">
+                        </form>
+                        <i class="fas fa-search article__icono"></i>
+                    </div>
+                    <img class="article__img" src="img/section--article.png">
                 </div>
             </article>
-        </article>
-    </main>
-    <footer class="footer">
-        <div class="footer__container">
-            <ul class="footer__list">
-                <li class="footer__item"><p class="footer__text">Acerca de Tripadvisor</p>
-                    <ul class="footer__list list--second">
-                        <li class="footer__item footer__item--second"><a class="footer__link footer__link--second" href="#">Quiénes somos</a></li>
-                        <li class="footer__item footer__item--second"><a class="footer__link footer__link--second" href="#">Prensa</a></li>           
-                        <li class="footer__item footer__item--second"><a class="footer__link footer__link--second" href="#">Recursos y políticas</a></li>           
-                        <li class="footer__item footer__item--second"><a class="footer__link footer__link--second" href="#">Integridad del contenido</a></li>           
-                    </ul>
-                </li>
-            </ul>
-            <ul class="footer__list">
-                <li class="footer__item"><p class="footer__text">Explorar</p>
-                    <ul class="footer__list list--second">
-                        <li class="footer__item footer__item--second"><a class="footer__link footer__link--second" href="#">Centro de ayuda</a></li>           
-                    </ul>
-                </li>
-            </ul>
-            <ul class="footer__list">
-                <li class="footer__item"><p class="footer__text">Haz negocios con nosotros</p>
-                    <ul class="footer__list list--second">
-                        <li class="footer__item footer__item--second"><a class="footer__link footer__link--second" href="#">Propietarios</a></li>
-                        <li class="footer__item footer__item--second"><a class="footer__link footer__link--second" href="#">Negocio Plus</a></li>           
-                        <li class="footer__item footer__item--second"><a class="footer__link footer__link--second" href="#">Ubicaciones Patrocinadas</a></li>           
-                        <li class="footer__item footer__item--second"><a class="footer__link footer__link--second" href="#">Anúnciate con nosotros</a></li>           
-                    </ul>
-                </li>
-            </ul>
-            <ul class="footer__list">
-                <li class="footer__item"><p class="footer__text">Obtén la aplicación</p>
-                    <ul class="footer__list list--second">
-                        <li class="footer__item footer__item--second"><a class="footer__link footer__link--second" href="#">Aplicación para iPhone</a></li>    
-                        <li class="footer__item footer__item--second"><a class="footer__link footer__link--second"  href="#">Aplicación para Android</a></li>           
-                    </ul>
-                </li>
-            </ul>
-            <ul class="footer__list">
-                <li class="footer__item"><p class="footer__text">Sitios de Tripadvisor</p>
-                    <ul class="footer__list list--second">
-                        <li class="footer__item footer__item--second"><p class="footer__text footer__text--second">Reserva los mejores restaurantes en</p><a class="footer__link footer__link--second" href="#">TheFork</a></li>           
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="footer__select">
-            <select name="select__selectMoneda">
-                <option value="value1">$ MXN</option> 
-                <option value="value2">$ USD</option>
-                <option value="value3">$ GBP</option>
-                <option value="value4">$ EUR</option>
-                <option value="value5">$ CAD</option>
-            </select>
-            <select name="select__selectRegion">
-                <option value="value1">United States</option> 
-                <option value="value2">Canada (English)</option>
-                <option value="value1">Canada (français)</option> 
-                <option value="value2">Brasil</option>
-                <option value="value1" selected>México</option> 
-                <option value="value2">Argentina</option>
-                <option value="value1">Chile</option> 
-                <option value="value2">Colombia</option>
-                <option value="value1">Perú</option> 
-                <option value="value2">Venezuale</option>
-            </select>
-        </div>
-        <div class="footer__icono">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-        </div>
-        <div class="footer__politic">
-            <div class="politic">
-                <img class="politic__img" src="img/logotipo.png">
-                <p class="politic__text">© 2020 TripAdvisor LLC Todos los derechos reservados.</p>
-                <a class="politic__link" href="#">Condiciones de uso</a>
-                <a class="politic__link" href="#">Declaración de privacidad y de cookies</a>
-                <a class="politic__link" href="#">Mapa del sitio</a>
-                <a class="politic__link" href="#">Cómo funciona el sitio</a>
+            <article>
+                <div class="article__header">
+                    <div class="article__header--container">
+                        <hr class="article__line">
+                        <p class="article__title">Apoya lo bueno que hay en el mundo</p>
+                    </div>
+                </div>
+                <section class="gallery">
+                    
+                    <article class="gallery__container">
+                        <a class="gallery__link" href="#">
+                            <img class="gallery__img" src="img/mundo__item1.png">
+                            <p class="gallery__descrip"> Revive tus experiencias de viaje </p>
+                            <p class="gallery__descrip">Escribir una opinión</p>
+                        </a>
+                    </article>
+                    <article class="gallery__container">
+                        <a class="gallery__link" href="#">
+                            <img class="gallery__img" src="img/mundo__item2.png">
+                            <p class="gallery__descrip"> Ayuda a los restaurantes que deseas visitar </p>
+                            <p class="gallery__descrip">Comprar una tarjeta de regalo</p>
+                        </a>
+                    </article>
+                    <article class="gallery__container">
+                        <a class="gallery__link" href="#">
+                            <img class="gallery__img" src="img/mundo__item3.png">
+                            <p class="gallery__descrip"> Explora el mundo desde tu hogar </p>
+                            <p class="gallery__descrip">Reserva una experiencia virtual</p>
+                        </a>
+                    </article>
+                </section> 
+                <div class="article__header">
+                    <div class="article__header--container">
+                        <hr class="article__line">
+                        <p class="article__title">Sueña con tu próximo viaje</p>
+                    </div>
+                </div>
+                <p class="article__subtitle">Destinos que a los viajeros les encantan</p> 
+                <section class="gallery">   
+                    <article class="gallery__container">
+                        <a class="gallery__link" href="#">
+                            <div class="gallery__save">
+                                <i class="far fa-heart fa-2x"></i>
+                            </div>
+                            <img class="gallery__img" src="img/newY.png">
+                            <p class="gallery__descrip"> Nueva York, Estado de Nueva York </p>
+                        </a>
+                    </article>
+                    <article class="gallery__container">
+                        <a class="gallery__link" href="#">
+                            <div class="gallery__save">
+                                <i class="far fa-heart fa-2x"></i>
+                            </div>
+                            <img class="gallery__img" src="img/singapur.png">
+                            <p class="gallery__descrip"> Singapur, Singapur </p>
+                        </a>
+                    </article>
+                    <article class="gallery__container">
+                        <a class="gallery__link" href="#">
+                            <div class="gallery__save">
+                                <i class="far fa-heart fa-2x"></i>
+                            </div>
+                            <img class="gallery__img" src="img/singapur.png">
+                            <p class="gallery__descrip"> Roma, Italia </p>
+                        </a>
+                    </article>
+                </section>
+                <article class="article__premios">
+                    <div class="article__premios--container">
+                        <img class="article__premios--logo" src="img/logo__premios.png">
+                        <p class="article__premios--p">Premios Travellers' Choice 2020</p>
+                        <a class="article__premios--link" href="#">Ver los ganadores</a>
+                        <img class="article__premios--img" src="img/section--art.png">
+                    </div>
+                </article>
+            </article>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <ul class="footer__list">
+                    <li>
+                        <input class="footer__input" type="checkbox" name ="group-1" id="group-1">
+                        <label class="footer__label" for="group-1"><i class="fas fa-plus footer__icono--plus"></i><i class="fas fa-minus footer__icono--minus"></i>Acerca de Tripadvisor</label>
+                        <ul class="footer__list footer__accordion--sub">
+                            <li class="footer__item"><a class="footer__link" href="#">Quiénes somos</a></li>
+                            <li class="footer__item"><a class="footer__link" href="#">Prensa</a></li>           
+                            <li class="footer__item"><a class="footer__link" href="#">Recursos y políticas</a></li>           
+                            <li class="footer__item"><a class="footer__link" href="#">Integridad del contenido</a></li>                       
+                        </ul>
+                    </li>
+                    <li>
+                        <input class="footer__input" type="checkbox" name ="group-2" id="group-2">
+                        <label class="footer__label" for="group-2"><i class="fas fa-plus footer__icono--plus"></i><i class="fas fa-minus footer__icono--minus"></i>Explorar</label>
+                        <ul class="footer__list footer__accordion--sub">
+                            <li class="footer__item"><a class="footer__link" href="#">Centro de ayuda</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input class="footer__input" type="checkbox" name ="group-3" id="group-3">
+                        <label class="footer__label" for="group-3"><i class="fas fa-plus footer__icono--plus"></i><i class="fas fa-minus footer__icono--minus"></i>Haz negocios con nosotros</label>
+                        <ul class="footer__list footer__accordion--sub">
+                            <li class="footer__item"><a class="footer__link" href="#">Propietarios</a></li>
+                            <li class="footer__item"><a class="footer__link" href="#">Negocio Plus</a></li>
+                            <li class="footer__item"><a class="footer__link" href="#">Ubicaciones Patrocinadas</a></li>
+                            <li class="footer__item"><a class="footer__link" href="#">Anúnciate con nosotros</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input class="footer__input" type="checkbox" name ="group-4" id="group-4">
+                        <label class="footer__label" for="group-4"><i class="fas fa-plus footer__icono--plus"></i><i class="fas fa-minus footer__icono--minus"></i>Obtén la aplicación</label>
+                        <ul class="footer__list footer__accordion--sub">
+                            <li class="footer__item"><a class="footer__link" href="#">Aplicación para iPhone</a></li>
+                            <li class="footer__item"><a class="footer__link" href="#">Aplicación para Android</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input class="footer__input" type="checkbox" name ="group-5" id="group-5">
+                        <label class="footer__label" for="group-5"><i class="fas fa-plus footer__icono--plus"></i><i class="fas fa-minus footer__icono--minus"></i>Sitios de Tripadvisor</label>
+                        <ul class="footer__list footer__accordion--sub">
+                            <li class="footer__item">Reserva los mejores restaurantes en&nbsp;<a class="footer__link" href="#">TheFork</a></li>
+                        </ul>
+                    </li>
+                </ul>          
+                <div class="footer__select">
+                    <select class="footer__select--item">
+                        <option value="value1">$ MXN</option> 
+                        <option value="value2">$ USD</option>
+                        <option value="value3">$ GBP</option>
+                        <option value="value4">$ EUR</option>
+                        <option value="value5">$ CAD</option>
+                    </select>
+                    <select class="footer__select--item">
+                        <option value="value1">United States</option> 
+                        <option value="value2">Canada (English)</option>
+                        <option value="value1">Canada (français)</option> 
+                        <option value="value2">Brasil</option>
+                        <option value="value1" selected>México</option> 
+                        <option value="value2">Argentina</option>
+                        <option value="value1">Chile</option> 
+                        <option value="value2">Colombia</option>
+                        <option value="value1">Perú</option> 
+                        <option value="value2">Venezuale</option>
+                    </select>
+                </div>
+                <div class="footer__icono--redes">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="footer__politic">
+                    <div>
+                        <img class="footer__img" src="img/logotipo.png"> 
+                    </div>
+                    <div>
+                        <p class="politic__text">© 2020 TripAdvisor LLC Todos los derechos reservados.</p>
+                        <div>
+                            <a class="politic__link" href="#">Condiciones de uso</a>
+                            <a class="politic__link" href="#">Declaración de privacidad y de cookies</a>
+                            <a class="politic__link" href="#">Mapa del sitio</a>
+                            <a class="politic__link" href="#">Cómo funciona el sitio</a>
+                        </div>
+                    </div>  
+                </div>
+                <p class="politic__text">Esta es la versión de nuestro sitio web destinada a quienes hablen español en México. Si eres residente de otro país o región, selecciona la versión correcta de Tripadvisor para tu país o región en el menú desplegable. <a class="politic__link" href="#">más</a></p>
             </div>
-            <p class="politic__text">Esta es la versión de nuestro sitio web destinada a quienes hablen español en México. Si eres residente de otro país o región, selecciona la versión correcta de Tripadvisor para tu país o región en el menú desplegable. <a class="politic__link" href="#">más</a></p>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
