@@ -11,18 +11,17 @@
         <header class="header">
             <div class="header__container">
                 <button class="header__button" name="button"> <i class="fas fa-list fa-2x"></i> </button>
-                <nav class="nav">
+                <nav class="nav nav--offcanvas">
                     <a class="nav__login" href="#">Iniciar sesión</a>
-                    <p class="nav__text">Publicar</p>
+                    <p class="nav__element">Publicar</p>
                     <ul class="nav__list">
                         <li class="nav__item nav__item--second"><a class="nav__link" href="#">Escribir una opinión</a></li>
                         <li class="nav__item nav__item--second"><a class="nav__link" href="#">Publicas fotos</a></li>
                     </ul>
-                    <a class="nav__text nav__link--element" href="#">Alertas</a>
-                    <a class="nav__text nav__link--element" href="#">Viajes</a>
-                    <a class="nav__text nav__link--element" href="#">Reservaciones</a>
-                    <hr class="nav__line">
-                    <ul class="nav__list">
+                    <a class="nav__element nav__element--link" href="#">Alertas</a>
+                    <a class="nav__element nav__element--link" href="#">Viajes</a>
+                    <a class="nav__element nav__element--link" href="#">Reservaciones</a>                 
+                    <ul class="nav__list nav__list--line">
                         <li class="nav__item"><a class="nav__link" href="#">Hoteles</a></li>
                         <li class="nav__item"><a class="nav__link" href="#">Qué hacer</a></li>
                         <li class="nav__item"><a class="nav__link" href="#">Restaurantes</a></li>
@@ -32,7 +31,7 @@
                         <li class="nav__item"><a class="nav__link" href="#">Paquetes de Vacaciones</a></li>
                         <li class="nav__item"><a class="nav__link" href="#">Cruceros</a></li>
                         <li class="nav__item"><a class="nav__link" href="#">Alquiler de autos</a></li>
-                        <li><p class="nav__text">Más</p>
+                        <li><p class="nav__element">Más</p>
                             <ul class="nav__list">
                                 <li class="nav__item nav__item--second"><a class="nav__link" href="#">Foro de viajes</a></li>
                                 <li class="nav__item nav__item--second"><a class="nav__link" href="#">Aerolineas</a></li>
@@ -47,34 +46,34 @@
             </div>
         </header>
         <main>
-            <nav>
-                <ul class="navig__list">
-                    <li class="navig__item"><a class="navig__link" href="#">Hoteles</a><i class="fas fa-bed icono"></i></li>
-                    <li class="navig__item"><a class="navig__link" href="#">Alquileres&nbsp;de&nbsp;vacaciones</a><i class="fas fa-key icono"></i></li>
-                    <li class="navig__item"><a class="navig__link" href="#">Cosas&nbsp;que&nbsp;hacer</a><i class="fas fa-map icono"></i></li>
-                    <li class="navig__item"><a class="navig__link" href="#">Restaurantes</a><i class="fas fa-utensils icono"></i></li>
-                    <li class="navig__item"><a class="navig__link" href="#">Escribir&nbsp;una&nbsp;opinión</a><i class="far fa-edit icono"></i></li>
-                    <li class="navig__item"><a class="navig__link" href="#">Foros&nbsp;de&nbsp;viajes</a><i class="fas fa-plane-departure icono"></i></li>
-                        <button class="navig__button" name="button"><a class="navig__link" href="#">Más</a><i class="fas fa-ellipsis-h icono"></i></button>
-                        <div class="navig--second">
-                            <p class="navig__text">Explora en Tripadvisor</p>
-                            <ul class="nav__list nav__list--button">    
-                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#a">Aerolíneas</a></li>
-                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#b">Agregar un lugar</a></li>  
-                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#c">Alquiler de autos</a></li> 
-                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#">Alquiler de vacaciones</a></li> 
-                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#">Centro de ayuda</a></li>  
-                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#">Cosas que hacer</a></li> 
-                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#">Cruceros</a></li>  
-                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#">Escribir una opinión</a></li>  
-                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#">Foro de viajes</a></li>  
-                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#">Hoteles </a></li>            
-                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#">Paquetes de Vacaciones</a></li>  
-                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#">Restaurantes</a></li> 
-                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#">Travellers' Choice</a></li>  
-                                <li class="nav__item navig__item--second"><a class="nav__link navig__link--second" href="#">Vuelos </a></li>               
+            <nav class="nav nav--main">
+                <ul class="nav__list nav__list--main">
+                    <li class="nav__item nav__item--main"><a class="nav__link" href="#">Hoteles</a><i class="fas fa-bed icono"></i></li>
+                    <li class="nav__item nav__item--main"><a class="nav__link" href="#">Alquileres&nbsp;de&nbsp;vacaciones</a><i class="fas fa-key icono"></i></li>
+                    <li class="nav__item nav__item--main"><a class="nav__link" href="#">Cosas&nbsp;que&nbsp;hacer</a><i class="fas fa-map icono"></i></li>
+                    <li class="nav__item nav__item--main"><a class="nav__link" href="#">Restaurantes</a><i class="fas fa-utensils icono"></i></li>
+                    <li class="nav__item nav__item--main"><a class="nav__link" href="#">Escribir&nbsp;una&nbsp;opinión</a><i class="far fa-edit icono"></i></li>
+                    <li class="nav__item nav__item--main"><a class="nav__link" href="#">Foros&nbsp;de&nbsp;viajes</a><i class="fas fa-plane-departure icono"></i></li>
+                        <button class="nav__button--main" name="button"><a class="nav__link" href="#">Más</a><i class="fas fa-ellipsis-h icono"></i></button>
+                        <nav class="nav nav--button">
+                            <p class="nav__text">Explora en Tripadvisor</p>
+                            <ul class="nav__list">    
+                                <li class="nav__item nav__item--button"><a class="nav__link nav__link--button" href="#a">Aerolíneas</a></li>
+                                <li class="nav__item nav__item--button"><a class="nav__link nav__link--button" href="#b">Agregar un lugar</a></li>  
+                                <li class="nav__item nav__item--button"><a class="nav__link nav__link--button" href="#c">Alquiler de autos</a></li> 
+                                <li class="nav__item nav__item--button"><a class="nav__link nav__link--button" href="#">Alquiler de vacaciones</a></li> 
+                                <li class="nav__item nav__item--button"><a class="nav__link nav__link--button" href="#">Centro de ayuda</a></li>  
+                                <li class="nav__item nav__item--button"><a class="nav__link nav__link--button" href="#">Cosas que hacer</a></li> 
+                                <li class="nav__item nav__item--button"><a class="nav__link nav__link--button" href="#">Cruceros</a></li>  
+                                <li class="nav__item nav__item--button"><a class="nav__link nav__link--button" href="#">Escribir una opinión</a></li>  
+                                <li class="nav__item nav__item--button"><a class="nav__link nav__link--button" href="#">Foro de viajes</a></li>  
+                                <li class="nav__item nav__item--button"><a class="nav__link nav__link--button" href="#">Hoteles </a></li>            
+                                <li class="nav__item nav__item--button"><a class="nav__link nav__link--button" href="#">Paquetes de Vacaciones</a></li>  
+                                <li class="nav__item nav__item--button"><a class="nav__link nav__link--button" href="#">Restaurantes</a></li> 
+                                <li class="nav__item nav__item--button"><a class="nav__link nav__link--button" href="#">Travellers' Choice</a></li>  
+                                <li class="nav__item nav__item--button"><a class="nav__link nav__link--button" href="#">Vuelos </a></li>               
                             </ul>
-                        </div> 
+                        </nav> 
                     </li>    
                 </ul>
             </nav>
@@ -97,8 +96,7 @@
                         <p class="article__title">Apoya lo bueno que hay en el mundo</p>
                     </div>
                 </div>
-                <section class="gallery">
-                    
+                <section class="gallery"> 
                     <article class="gallery__container">
                         <a class="gallery__link" href="#">
                             <img class="gallery__img" src="img/mundo__item1.png">
