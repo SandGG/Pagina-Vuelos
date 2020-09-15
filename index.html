@@ -10,7 +10,7 @@
     <body class="body">
         <header class="header">
             <div class="header__container">
-                <button class="header__button" name="button"> <i class="fas fa-list fa-2x"></i> </button>
+                <button class="header__item" name="button"> <i class="fas fa-list fa-2x"></i> </button>
                 <nav class="nav nav--offcanvas">
                     <a class="nav__login" href="#">Iniciar sesión</a>
                     <p class="nav__element">Publicar</p>
@@ -42,19 +42,26 @@
                     </ul>
                 </nav>    
                 <img class="header__img" src="img/logo.png">
-                <a href="#"> <i class="fas fa-search fa-2x"></i> </a>  
+                <div class="header__icon">
+                    <button class="header__item header__item--breakpoint" name="button"> <i class="fas fa-plus-circle fa-2x"></i><span class="header__span">Publicar</span></button>
+                    <a class="header__item header__item--breakpoint" href="#"> <i class="fas fa-bell fa-2x"></i><span class="header__span">Alertas</span></a>
+                    <a class="header__item header__item--breakpoint" href="#"> <i class="fas fa-heart fa-2x"></i><span class="header__span">Viajes</span></a>
+                    <a class="nav__login nav__login--header" href="#">Iniciar sesión</a>
+                </div>
+                <a class="header__item" href="#"> <i class="fas fa-search fa-2x"></i> </a>  
             </div>
         </header>
         <main>
             <nav class="nav nav--main">
                 <ul class="nav__list nav__list--main">
-                    <li class="nav__item nav__item--main"><a class="nav__link" href="#">Hoteles</a><i class="fas fa-bed icono"></i></li>
-                    <li class="nav__item nav__item--main"><a class="nav__link" href="#">Alquileres&nbsp;de&nbsp;vacaciones</a><i class="fas fa-key icono"></i></li>
-                    <li class="nav__item nav__item--main"><a class="nav__link" href="#">Cosas&nbsp;que&nbsp;hacer</a><i class="fas fa-map icono"></i></li>
-                    <li class="nav__item nav__item--main"><a class="nav__link" href="#">Restaurantes</a><i class="fas fa-utensils icono"></i></li>
-                    <li class="nav__item nav__item--main"><a class="nav__link" href="#">Escribir&nbsp;una&nbsp;opinión</a><i class="far fa-edit icono"></i></li>
-                    <li class="nav__item nav__item--main"><a class="nav__link" href="#">Foros&nbsp;de&nbsp;viajes</a><i class="fas fa-plane-departure icono"></i></li>
-                        <button class="nav__button--main nav__link" name="button">Más<i class="fas fa-ellipsis-h icono"></i></button>
+                    <li class="nav__item nav__item--main"><a class="nav__link nav__link--main" href="#">Hoteles</a><i class="fas fa-bed icono"></i></li>
+                    <li class="nav__item nav__item--main"><a class="nav__link nav__link--main" href="#">Alquileres de vacaciones</a><i class="fas fa-key icono"></i></li>
+                    <li class="nav__item nav__item--main"><a class="nav__link nav__link--main" href="#">Cosas que hacer</a><i class="fas fa-map icono"></i></li>
+                    <li class="nav__item nav__item--main"><a class="nav__link nav__link--main" href="#">Restaurantes</a><i class="fas fa-utensils icono"></i></li>
+                    <li class="nav__item nav__item--main"><a class="nav__link nav__link--main" href="#">Escribir una opinión</a><i class="far fa-edit icono"></i></li>
+                    <li class="nav__item nav__item--main"><a class="nav__link nav__link--main" href="#">Foros de viajes</a><i class="far fa-comment-alt icono"></i></li>
+                    <li class="nav__item nav__item--main"><a class="nav__link nav__link--main" href="#">Vuelos</a><i class="fas fa-plane-departure icono"></i></li>
+                        <button class="nav__button--main nav__link nav__link--main" name="button">Más<i class="fas fa-ellipsis-h icono"></i></button>
                         <nav class="nav nav--button">
                             <p class="nav__text">Explora en Tripadvisor</p>
                             <ul class="nav__list">    
@@ -157,9 +164,11 @@
                 </section>
                 <article class="article__premios">
                     <div class="article__premios--container">
-                        <img class="article__premios--logo" src="img/logo__premios.png">
-                        <p class="article__premios--p">Premios Travellers' Choice 2020</p>
-                        <a class="article__premios--link" href="#">Ver los ganadores</a>
+                        <div class="article__premios--dat">
+                            <img class="article__premios--logo" src="img/logo__premios.png">
+                            <p class="article__premios--p">Premios Travellers' Choice 2020</p>
+                            <a class="article__premios--link" href="#">Ver los ganadores</a>
+                        </div>
                         <img class="article__premios--img" src="img/section--art.png">
                     </div>
                 </article>
@@ -168,7 +177,7 @@
         <footer class="footer">
             <div class="footer__container">
                 <ul class="footer__list">
-                    <li>
+                    <li >
                         <input class="footer__input" type="checkbox" name ="group-1" id="group-1">
                         <label class="footer__label" for="group-1"><i class="fas fa-plus footer__icono--plus"></i><i class="fas fa-minus footer__icono--minus"></i>Acerca de Tripadvisor</label>
                         <ul class="footer__list footer__accordion--sub">
@@ -210,49 +219,55 @@
                             <li class="footer__item">Reserva los mejores restaurantes en&nbsp;<a class="footer__link" href="#">TheFork</a></li>
                         </ul>
                     </li>
-                </ul>          
-                <div class="footer__select">
-                    <select class="footer__select--item">
-                        <option value="value1">$ MXN</option> 
-                        <option value="value2">$ USD</option>
-                        <option value="value3">$ GBP</option>
-                        <option value="value4">$ EUR</option>
-                        <option value="value5">$ CAD</option>
-                    </select>
-                    <select class="footer__select--item">
-                        <option value="value1">United States</option> 
-                        <option value="value2">Canada (English)</option>
-                        <option value="value1">Canada (français)</option> 
-                        <option value="value2">Brasil</option>
-                        <option value="value1" selected>México</option> 
-                        <option value="value2">Argentina</option>
-                        <option value="value1">Chile</option> 
-                        <option value="value2">Colombia</option>
-                        <option value="value1">Perú</option> 
-                        <option value="value2">Venezuale</option>
-                    </select>
-                </div>
-                <div class="footer__icono--redes">
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                </div>
-                <div class="footer__politic">
-                    <div>
-                        <img class="footer__img" src="img/logotipo.png"> 
-                    </div>
-                    <div>
-                        <p class="politic__text">© 2020 TripAdvisor LLC Todos los derechos reservados.</p>
-                        <div>
-                            <a class="politic__link" href="#">Condiciones de uso</a>
-                            <a class="politic__link" href="#">Declaración de privacidad y de cookies</a>
-                            <a class="politic__link" href="#">Mapa del sitio</a>
-                            <a class="politic__link" href="#">Cómo funciona el sitio</a>
+                </ul>     
+                <div class="footer__breakpoint">
+                    <div class="footer__country">
+                        <div class="footer__select">
+                            <select class="footer__select--item">
+                                <option value="value1">$ MXN</option> 
+                                <option value="value2">$ USD</option>
+                                <option value="value3">$ GBP</option>
+                                <option value="value4">$ EUR</option>
+                                <option value="value5">$ CAD</option>
+                            </select>
+                            <select class="footer__select--item">
+                                <option value="value1">United States</option> 
+                                <option value="value2">Canada (English)</option>
+                                <option value="value1">Canada (français)</option> 
+                                <option value="value2">Brasil</option>
+                                <option value="value1" selected>México</option> 
+                                <option value="value2">Argentina</option>
+                                <option value="value1">Chile</option> 
+                                <option value="value2">Colombia</option>
+                                <option value="value1">Perú</option> 
+                                <option value="value2">Venezuale</option>
+                            </select>
                         </div>
+                        <div class="footer__icono--redes">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="footer__refer">
+                        <div class="footer__politic">
+                            <div>
+                                <img class="footer__img" src="img/logotipo.png"> 
+                            </div>
+                            <div>
+                                <p class="politic__text">© 2020 TripAdvisor LLC Todos los derechos reservados.</p>
+                                <div>
+                                    <a class="politic__link" href="#">Condiciones de uso</a>
+                                    <a class="politic__link" href="#">Declaración de privacidad y de cookies</a>
+                                    <a class="politic__link" href="#">Mapa del sitio</a>
+                                    <a class="politic__link" href="#">Cómo funciona el sitio</a>
+                                </div>
+                            </div> 
+                        </div>
+                        <p class="politic__text">Esta es la versión de nuestro sitio web destinada a quienes hablen español en México. Si eres residente de otro país o región, selecciona la versión correcta de Tripadvisor para tu país o región en el menú desplegable. <a class="politic__link" href="#">más</a></p> 
                     </div>  
-                </div>
-                <p class="politic__text">Esta es la versión de nuestro sitio web destinada a quienes hablen español en México. Si eres residente de otro país o región, selecciona la versión correcta de Tripadvisor para tu país o región en el menú desplegable. <a class="politic__link" href="#">más</a></p>
-            </div>
+                </div>     
+            </div>    
         </footer>
     </body>
 </html>
